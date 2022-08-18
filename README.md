@@ -41,10 +41,10 @@ To spawn a shell, we just need to make a system call to execute the /bin/sh shel
 Shellcode executed with nasm.
 
 ```
-jet@github:~/code $ nasm exec_shell.s
-jet@github:~/code $ wc -c exec_shell
+jet@github:~/code $ nasm exec.s
+jet@github:~/code $ wc -c exec
 36 exec_shell
-jet@github:~/code $ hexdump -C exec_shell
+jet@github:~/code $ hexdump -C exec
 00000000 eb 16 5b 31 c0 88 43 07 89 5b 08 89 43 0c 8d 4b |..[1..C..[..C..K|
 00000010 08 8d 53 0c b0 0b cd 80 e8 e5 ff ff ff 2f 62 69 |..S........../bi|
 00000020 6e 2f 73 68 |n/sh|
